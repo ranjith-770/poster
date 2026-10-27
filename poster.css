@@ -1,0 +1,157 @@
+ * {
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+   background: #3F5EFB;
+   background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 0px 0px 0px;
+}
+.head h1{
+    color: #F9DFDF;
+    font-size: 40px;
+
+}
+a{
+    color: #FFCDC9;
+    text-decoration: none;
+    font-size: 18px;
+}
+.btn button{
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main h1{
+    font-size: 50px;
+}
+.main p{
+    margin-top: 10px;
+}
+img{
+    height: 11px;
+    width: 11px;
+}
+.three{
+    display: grid;
+    grid-template: repeat(1, 1fr)/repeat(3, 0fr);
+    justify-content: center;
+    gap: 25px;
+    padding: 40px ;
+}
+.basic{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    height: 380px;
+    width: 270px;
+    border-radius: 15px;
+    transition: all  0.5s ease-in;
+}
+.basic:hover{
+    transform:translateY(-10px);
+    box-shadow: 0px 2px 30px rgb(250, 249, 249);
+}
+.professional{
+    background-color: #6E3511;
+    border: 2px solid #6E3511;
+    color: whitesmoke;
+    height: 380px;
+    width: 270px;
+    border-radius: 15px;
+    transition: all 0.5s ease-in-out ;
+
+}
+.professional:hover{
+    transform:translateY(-10px) ;
+    box-shadow: 0px 2px 30px black;
+}
+.enterprise{
+    background-color: whitesmoke;
+    border: 2px solid whitesmoke;
+    height: 380px;
+    width: 270px;
+    border-radius: 15px;
+    transition: all 0.5s ease-out ;
+}
+.enterprise:hover{
+    transform:translateY(-10px) ;
+    box-shadow: 0px 2px 30px rgb(253, 252, 252);
+}
+.basic h3, h2, p{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.professional h3, h2, p{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.enterprise h3, h2, p{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+.basic button,.enterprise button{
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 30px;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+    background-color: black;
+    color: whitesmoke;
+}
+.professional button {
+    margin-top: 15px;
+    margin-left: 20px;
+    height: 30px;
+    width: 220px;
+    border: none;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+@media (max-width: 320px)
+{
+   .three{
+    display: flex;
+    flex-direction:column;
+   }
+   a{
+    font-size: 10px;
+    padding: 10px;
+
+   }
+   .all{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+   }
+   .btn{
+    height: fit-content;
+    width: fit-content;
+    padding: 15px;
+   }
+   .main h1{
+    font-size: 25px;
+   }
+   
+}
+@media (max-width:768px){
+    .three{
+    display: flex;
+    gap: 5px;
+       }
+} 
+
